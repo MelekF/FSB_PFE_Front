@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="reclamationens.component.css">
+
+    <meta charset="UTF-8">
+    <!-- <nom>Inscription</nom> -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="align">
+
+    <div style="width: fit-content; background-color: aliceblue; ">
+        <a href="reclamationens.component.css"></a>
+
+    </div>
+    <div class="grid align__item">
+
+        <div class="register">
+
+
+            <h2>Reclamation</h2>
+            <form (ngSubmit)="addReclamation()">
+                <label for="name">Nom </label>
+                <input type="text" class="form-control" id="Nom" name="Nom" [(ngModel)]="reclamation.reclamationnom"
+                    id="Nom" placeholder="Reclamation">
+
+                <label for="Type">Type </label>
+                <input type="text" class="form-control" id="Type" name="Type" [(ngModel)]="reclamation.reclamationtype"
+                    id="Type" placeholder="Type">
+
+                <label for="Description">Description </label>
+                <input type="text" class="form-control" id="Description" name="Description"
+                    [(ngModel)]="reclamation.reclamationdescription" placeholder="Description">
+
+                <label for="Salle">Salle </label>
+                <input type="text" class="form-control" name="Salle" [(ngModel)]="reclamation.reclamationsalle"
+                    id="Salle" placeholder="Salle">
+
+                <label for="Pc">Pc </label>
+                <input type="text" class="form-control" id="Pc" name="Pc" [(ngModel)]="reclamation.reclamationpc"
+                    placeholder="Salle">
+
+                <label for="date">Date </label>
+                <input type="text" class="form-control" id="date" name="date" [(ngModel)]="reclamation.reclamationdate"
+                    placeholder="Date">
+
+                <label for="Heure">Heure </label>
+                <input type="text" class="form-control" id="Heure" name="Heure"
+                    [(ngModel)]="reclamation.reclamationheure" placeholder="Heure">
+
+                <label for="Etat">Etat </label>
+                <input type="text" class="form-control" id="Etat" name="Etat" [(ngModel)]="reclamation.reclamationetat"
+                    placeholder="Etat">
+
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+            <!--       
+            <form>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <div class="form__fields">
+                        <input type="reservationnom" placeholder="reservationnom">
+                    </div>
+                    <div class="form__fields">
+                        <input type="reservationtel" placeholder="reservationtel">
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <div class="form__fields">
+                        <input type="reservationncin" placeholder="reservationncin">
+                    </div>
+                    <div class="form__fields">
+                        <input type="reservationtype" placeholder="reservationtype">
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
+                    <div class="form__field">
+                        <input type="reservationemail" placeholder="reservationemail">
+                    </div>
+                    <div class="form__field">
+                        <input type="reservationsalle" placeholder="reservationsalle">
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
+                    <div class="form__field">
+                        <input type="reservationemateriel" placeholder="reservationemateriel">
+                    </div>
+
+                    <div class="form__field">
+                        <input type="reservationdate" placeholder="reservationdate">
+                    </div>
+                </div>
+
+                <div class="form__field">
+                    <input type="reservationheure" placeholder="reservationheure">
+                </div>
+
+
+    
+                <button type="submit" class="form__field ">Reserver</button>
+            
+            </form>
+ -->
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="updatereservation.component.css">
+
+    <meta charset="UTF-8">
+    <!-- <nom>Inscription</nom> -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="align">
+
+    <div style="width: fit-content; background-color: aliceblue; ">
+        <a href="updatereservation.component.css"></a>
+
+    </div>
+    <div class="grid align__item">
+
+        <div class="register">
+
+
+            <h2>Reservation</h2>
+            <form (ngSubmit)="updateReservation()">
+                <label for="name">Nom </label>
+                <input type="text" class="form-control" id="Nom" name="Nom" [(ngModel)]="reservation.reservationnom"
+                    id="Nom">
+
+                <label for="Tel">Tel </label>
+                <input type="text" class="form-control" id="Tel" name="Tel" [(ngModel)]="reservation.reservationtel"
+                    id="Tel">
+
+                <label for="email">E-mail </label>
+                <input type="text" class="form-control" id="email" name="email"
+                    [(ngModel)]="reservation.reservationemail" id="email">
+
+                <label for="cin">CIN </label>
+                <input type="text" class="form-control" id="cin" name="cin" [(ngModel)]="reservation.reservationncin"
+                    id="cin">
+
+                <label for="type">Type </label>
+                <input type="text" class="form-control" id="type" name="type" [(ngModel)]="reservation.reservationtype"
+                    id="type">
+
+                <label for="v">Salle </label>
+                <input type="text" class="form-control" id="salle" name="salle"
+                    [(ngModel)]="reservation.reservationsalle" id="v">
+
+                <label for="materiel">Materiel </label>
+                <input type="text" class="form-control" id="materiel" name="materiel"
+                    [(ngModel)]="reservation.reservationemateriel" id="materiel">
+
+                <label for="date">Date </label>
+                <input type="text" class="form-control" id="date" name="date" [(ngModel)]="reservation.reservationdate"
+                    id="date">
+
+                <label for="heure">Heure </label>
+                <input type="text" class="form-control" id="heure" name="heure"
+                    [(ngModel)]="reservation.reservationheure" id="heure">
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+            <!--       
+            <form>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <div class="form__fields">
+                        <input type="reservationnom" placeholder="reservationnom">
+                    </div>
+                    <div class="form__fields">
+                        <input type="reservationtel" placeholder="reservationtel">
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                    <div class="form__fields">
+                        <input type="reservationncin" placeholder="reservationncin">
+                    </div>
+                    <div class="form__fields">
+                        <input type="reservationtype" placeholder="reservationtype">
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
+                    <div class="form__field">
+                        <input type="reservationemail" placeholder="reservationemail">
+                    </div>
+                    <div class="form__field">
+                        <input type="reservationsalle" placeholder="reservationsalle">
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
+                    <div class="form__field">
+                        <input type="reservationemateriel" placeholder="reservationemateriel">
+                    </div>
+
+                    <div class="form__field">
+                        <input type="reservationdate" placeholder="reservationdate">
+                    </div>
+                </div>
+
+                <div class="form__field">
+                    <input type="reservationheure" placeholder="reservationheure">
+                </div>
+
+
+    
+                <button type="submit" class="form__field ">Reserver</button>
+            
+            </form>
+ -->
+            /////////////////////////////////////////////////////////////////
+
+            <!-- <div class="submit-form">
+                <div *ngIf="!submitted">
+                    <div class="form-group">
+                        <label for="nom">nom</label>
+                        <input type="text" class="form-control" id="nom" required
+                            [(ngModel)]="Reservation.reservationnom" name="nom" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input class="form-control" id="email" required [(ngModel)]="Reservation.reservationemail"
+                            name="email" />
+                    </div>
+
+                    <button (click)="addReclamation()" class="btn btn-success">Submit</button>
+                </div>
+
+            </div>-->
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
